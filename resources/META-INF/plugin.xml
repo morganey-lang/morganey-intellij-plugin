@@ -25,7 +25,11 @@
 
 
   <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
+      <fileType.fileViewProviderFactory filetype="morg" implementationClass="com.morganey.editor.MorganeyFileViewProvider">
+      </fileType.fileViewProviderFactory>
+
+      <fileEditorProvider implementation="com.morganey.editor.MorganeyFileEditorProvider">
+      </fileEditorProvider>
   </extensions>
 
   <actions>
@@ -43,5 +47,8 @@
     <component>
       <implementation-class>com.morganey.PluginRegistration</implementation-class>
     </component>
+      <component>
+          <implementation-class>com.morganey.editor.MorganeyDocumentManager</implementation-class>
+      </component>
   </application-components>
 </idea-plugin>

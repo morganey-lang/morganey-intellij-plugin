@@ -22,35 +22,18 @@
     SOFTWARE.
 */
 
-package com.morganey
+package com.morganey.shell
 
-import com.intellij.openapi.actionSystem.ActionManager
-import com.intellij.openapi.components.ApplicationComponent
-import com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl
-import com.morganey.actions.InitialisationAction
-import com.morganey.Constants.INITIALISATION_ACTION_KEY
-import com.morganey.filetype.MorganeyFileType
+import com.intellij.openapi.project.DumbAware
+import com.intellij.openapi.project.Project
+import com.intellij.openapi.wm.ToolWindow
+import com.intellij.openapi.wm.ToolWindowFactory
 
 /**
  * Created by thoma on 19/09/2016.
  */
-class PluginRegistration : ApplicationComponent{
-    val actionManager = ActionManager.getInstance()
-    val init = InitialisationAction()
-    val fileManager = FileTypeManagerImpl.getInstance()
-
-    override fun getComponentName() : String {
-        return "Morganey-For-Intellij"
-    }
-
-    override fun disposeComponent() {
-        println("Plugin Unloaded: ${this.componentName}")
-        actionManager.unregisterAction(INITIALISATION_ACTION_KEY)
-    }
-
-    override fun initComponent() {
-        println("Plugin Loaded: ${this.componentName}")
-        actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("morg"))
+class MorganeyShellToolWindowFactory : ToolWindowFactory, DumbAware {
+    override fun createToolWindowContent(p0 : Project, p1 : ToolWindow) {
+        throw UnsupportedOperationException("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

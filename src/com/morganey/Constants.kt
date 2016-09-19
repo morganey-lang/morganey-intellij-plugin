@@ -5,4 +5,8 @@ package com.morganey
  */
 object Constants {
     val INITIALISATION_ACTION_KEY = "InitialisationAction"
+    val DOCUMENT_HARD_REF_KEY = "HARD_REF_TO_DOCUMENT_KEY"
+    val LINE_KEY = "LINE_SEPARATOR_KEY"
+    val FILE_KEY = "FILE_KEY"
+    val RECOMPUTE_FILE_TYPE = "Must recompute file type"
 }

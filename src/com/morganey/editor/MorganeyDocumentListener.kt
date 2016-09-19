@@ -22,35 +22,33 @@
     SOFTWARE.
 */
 
-package com.morganey
+package com.morganey.editor
 
-import com.intellij.openapi.actionSystem.ActionManager
-import com.intellij.openapi.components.ApplicationComponent
-import com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl
-import com.morganey.actions.InitialisationAction
-import com.morganey.Constants.INITIALISATION_ACTION_KEY
-import com.morganey.filetype.MorganeyFileType
+import com.intellij.openapi.application.ApplicationManager
+import com.intellij.openapi.editor.event.DocumentAdapter
+import com.intellij.openapi.editor.event.DocumentEvent
 
 /**
  * Created by thoma on 19/09/2016.
  */
-class PluginRegistration : ApplicationComponent{
-    val actionManager = ActionManager.getInstance()
-    val init = InitialisationAction()
-    val fileManager = FileTypeManagerImpl.getInstance()
-
-    override fun getComponentName() : String {
-        return "Morganey-For-Intellij"
+class MorganeyDocumentListener  : DocumentAdapter, Runnable {
+    var updateScheduled : Boolean = false
+    var component : MorganeyEditorComponent? = null
+    private val lambda : () -> Unit = {
+        updateScheduled = false
+        this.component?.updateModifiedProperty()
     }
-
-    override fun disposeComponent() {
-        println("Plugin Unloaded: ${this.componentName}")
-        actionManager.unregisterAction(INITIALISATION_ACTION_KEY)
+    constructor(component : MorganeyEditorComponent?){
+        this.component = component
     }
-
-    override fun initComponent() {
-        println("Plugin Loaded: ${this.componentName}")
-        actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("morg"))
+    override fun run() {
+        lambda()
+    }
+    override fun documentChanged(e : DocumentEvent?) {
+        super.documentChanged(e)
+        if (!updateScheduled) {
+            ApplicationManager.getApplication().invokeLater(this)
+            updateScheduled = true
+        }
     }
 }
