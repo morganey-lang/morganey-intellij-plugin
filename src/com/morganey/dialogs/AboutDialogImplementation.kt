@@ -21,25 +21,25 @@
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 */
+@file:JvmName("AboutDialog\$Ext") // Do Some Kotlin Sorcery!
+@file:JvmMultifileClass() // Do Some Kotlin Sorcery!
+package com.morganey.dialogs
 
-package com.morganey.actions
-
-import com.intellij.openapi.actionSystem.AnAction
-import com.intellij.openapi.actionSystem.AnActionEvent
-import com.intellij.openapi.project.Project
+import com.intellij.ide.IdeBundle
+import com.intellij.ide.plugins.PluginManager
+import com.intellij.openapi.application.ex.ApplicationInfoEx
+import com.intellij.openapi.application.impl.ApplicationInfoImpl
+import com.intellij.openapi.extensions.PluginId
 
 /**
  * Created by thoma on 19/09/2016.
  */
-class InitialisationAction : AnAction(){
-    companion object ProjectInfo{
-        var project : Project? = null
-        var projectDirectory : String? = ""
-        var isOpen : Boolean? = false
-    }
-    override fun actionPerformed(p0 : AnActionEvent?) {
-        project = p0?.project
-        projectDirectory = project?.basePath
-        isOpen = project?.isOpen
-    }
+fun AboutDialog.DisplayPluginVersion(){
+    lblVersion.text += PluginManager.getPlugin(PluginId.getId("com.thomas.needham.morganey"))?.getVersion();
+}
+
+fun AboutDialog.DisplayIDEVersion(){
+    val appInfo : ApplicationInfoImpl? = ApplicationInfoEx.getInstance() as ApplicationInfoImpl?
+    val buildinfo : String = IdeBundle.message("about.box.build.number",appInfo?.build.toString())
+    lblBuild.text += buildinfo
 }

@@ -29,7 +29,14 @@
   </extensions>
 
   <actions>
-    <!-- Add your actions here -->
+    <group id="MorganeyGroup" text="Morganey" popup="true">
+        <add-to-group group-id="MainMenu" anchor="after" relative-to-action="ToolsMenu"/>
+            <action id="ShowAboutDialogAction" class="com.morganey.actions.ShowAboutDialogAction" text="Show About Dialog"
+                    description="Shows information about this plugin">
+                <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt ESCAPE" second-keystroke="ctrl alt F1"/>
+            </action>
+    </group>
+
   </actions>
 
   <application-components>
