@@ -5,7 +5,9 @@
       <element id="module-output" name="test_bed" />
       <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$USER_HOME$/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.8.jar" path-in-jar="/" />
-      <element id="dir-copy" path="$PROJECT_DIR$/lib" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-runtime.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-runtime-sources.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/kotlin-reflect.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
