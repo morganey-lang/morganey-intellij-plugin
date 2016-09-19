@@ -1,17 +1,17 @@
 <idea-plugin version="2">
-  <id>com.your.company.unique.plugin.id</id>
-  <name>Plugin display name here</name>
-  <version>1.0</version>
-  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+  <id>com.thomas.needham.morganey</id>
+  <name>Morganey-For-Intellij</name>
+  <version>0.1.0</version>
+  <vendor email="06needhamt@gmail.com" url="https://github.com/morganey-lang">Morganey-Lang</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      Plugin to integrate the Morganey language https://github.com/rexim/Morganey <br>
+      into jetbrains products
     ]]></description>
 
   <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      Version 0.1.0: First Release <br>
+
     ]]>
   </change-notes>
 
@@ -20,9 +20,9 @@
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
-  <!-- uncomment to enable plugin in all products
+  <!-- uncomment to enable plugin in all products -->
   <depends>com.intellij.modules.lang</depends>
-  -->
+
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
