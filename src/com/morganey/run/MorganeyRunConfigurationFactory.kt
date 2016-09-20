@@ -22,36 +22,34 @@
     SOFTWARE.
 */
 
-package com.morganey
+package com.morganey.run
 
-import com.intellij.openapi.actionSystem.ActionManager
-import com.intellij.openapi.components.ApplicationComponent
-import com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl
+import com.intellij.execution.configurations.ConfigurationFactory
+import com.intellij.execution.configurations.ConfigurationType
+import com.intellij.execution.configurations.RunConfiguration
+import com.intellij.ide.DataManager
+import com.intellij.openapi.actionSystem.DataContext
+import com.intellij.openapi.actionSystem.DataKeys
+import com.intellij.openapi.project.Project
 import com.morganey.actions.InitialisationAction
-import com.morganey.Constants.INITIALISATION_ACTION_KEY
-import com.morganey.filetype.MorganeyFileType
 
 /**
- * Created by thoma on 19/09/2016.
+ * Created by thoma on 20/09/2016.
  */
-class PluginRegistration : ApplicationComponent{
-    val actionManager = ActionManager.getInstance()
-    val init = InitialisationAction()
-    val fileManager = FileTypeManagerImpl.getInstance()
-
-    override fun getComponentName() : String {
-        return "Morganey-For-Intellij"
+open class MorganeyRunConfigurationFactory : ConfigurationFactory{
+    companion object Data{
+        @JvmStatic val FACTORY_NAME = "Morganey Configuration Factory"
     }
-
-    override fun disposeComponent() {
-        println("Plugin Unloaded: ${this.componentName}")
-        actionManager.unregisterAction(INITIALISATION_ACTION_KEY)
-    }
-
-    override fun initComponent() {
-        println("Plugin Loaded: ${this.componentName}")
-        actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("morg"))
+    constructor(configurationType: ConfigurationType) : super(configurationType){
 
     }
+    override fun createTemplateConfiguration(p0 : Project) : RunConfiguration {
+        return MorganeyRunConfiguration(p0, this, "Morganey")
+    }
+
+    override fun getName() : String {
+        return FACTORY_NAME
+    }
+
+
 }

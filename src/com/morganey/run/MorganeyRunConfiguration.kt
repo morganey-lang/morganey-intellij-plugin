@@ -22,36 +22,36 @@
     SOFTWARE.
 */
 
-package com.morganey
+package com.morganey.run
 
-import com.intellij.openapi.actionSystem.ActionManager
-import com.intellij.openapi.components.ApplicationComponent
-import com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl
-import com.morganey.actions.InitialisationAction
-import com.morganey.Constants.INITIALISATION_ACTION_KEY
-import com.morganey.filetype.MorganeyFileType
+import com.intellij.execution.ExecutionException
+import com.intellij.execution.Executor
+import com.intellij.execution.configurations.ConfigurationFactory
+import com.intellij.execution.configurations.RunConfiguration
+import com.intellij.execution.configurations.RunConfigurationBase
+import com.intellij.execution.configurations.RunProfileState
+import com.intellij.execution.runners.ExecutionEnvironment
+import com.intellij.openapi.options.SettingsEditor
+import com.intellij.openapi.project.Project
 
 /**
- * Created by thoma on 19/09/2016.
+ * Created by thoma on 20/09/2016.
  */
-class PluginRegistration : ApplicationComponent{
-    val actionManager = ActionManager.getInstance()
-    val init = InitialisationAction()
-    val fileManager = FileTypeManagerImpl.getInstance()
+class MorganeyRunConfiguration : RunConfigurationBase{
+    constructor(project : Project, factory : ConfigurationFactory, name : String?) : super(project, factory, name){
 
-    override fun getComponentName() : String {
-        return "Morganey-For-Intellij"
     }
 
-    override fun disposeComponent() {
-        println("Plugin Unloaded: ${this.componentName}")
-        actionManager.unregisterAction(INITIALISATION_ACTION_KEY)
+    override fun checkConfiguration() {
+
     }
 
-    override fun initComponent() {
-        println("Plugin Loaded: ${this.componentName}")
-        actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("morg"))
+    override fun getConfigurationEditor() : SettingsEditor<out RunConfiguration> {
+        return MorganeySettingsEditor()
+    }
 
+    @Throws(ExecutionException::class)
+    override fun getState(p0 : Executor, p1 : ExecutionEnvironment) : RunProfileState? {
+        return null
     }
 }

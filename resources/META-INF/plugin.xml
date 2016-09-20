@@ -30,6 +30,9 @@
 
       <fileEditorProvider implementation="com.morganey.editor.MorganeyFileEditorProvider">
       </fileEditorProvider>
+      <configurationType implementation="com.morganey.run.MorganeyRunConfigurationType">
+      </configurationType>
+
   </extensions>
 
   <actions>

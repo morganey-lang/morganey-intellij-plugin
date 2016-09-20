@@ -23,6 +23,11 @@ SOFTWARE.
  */
 package com.morganey
 
+import com.intellij.ide.DataManager
+import com.intellij.openapi.actionSystem.DataContext
+import com.intellij.openapi.actionSystem.DataKeys
+import com.intellij.openapi.project.Project
+
 /**
  * Created by Thomas Needham on 19/09/2016.
  */
@@ -49,5 +54,10 @@ object Predicates {
 
     @JvmStatic val IntInherit : (Int) -> Int = {
         0
+    }
+
+    @JvmStatic val getProject : () -> Project? = {
+        val dataContext : DataContext = DataManager.getInstance().getDataContext()
+        DataKeys.PROJECT.getData(dataContext)
     }
 }

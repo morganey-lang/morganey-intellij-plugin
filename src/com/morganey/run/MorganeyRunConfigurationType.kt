@@ -22,36 +22,35 @@
     SOFTWARE.
 */
 
-package com.morganey
+package com.morganey.run
 
-import com.intellij.openapi.actionSystem.ActionManager
-import com.intellij.openapi.components.ApplicationComponent
-import com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl
-import com.morganey.actions.InitialisationAction
-import com.morganey.Constants.INITIALISATION_ACTION_KEY
-import com.morganey.filetype.MorganeyFileType
+import com.intellij.execution.configurations.ConfigurationFactory
+import com.intellij.execution.configurations.ConfigurationType
+import com.intellij.icons.AllIcons
+import com.morganey.Constants
+import javax.swing.Icon
 
 /**
- * Created by thoma on 19/09/2016.
+ * Created by thoma on 20/09/2016.
  */
-class PluginRegistration : ApplicationComponent{
-    val actionManager = ActionManager.getInstance()
-    val init = InitialisationAction()
-    val fileManager = FileTypeManagerImpl.getInstance()
-
-    override fun getComponentName() : String {
-        return "Morganey-For-Intellij"
+class MorganeyRunConfigurationType : ConfigurationType {
+    override fun getIcon() : Icon {
+        return AllIcons.General.Information // TODO Replace with Morganey Logo
     }
 
-    override fun disposeComponent() {
-        println("Plugin Unloaded: ${this.componentName}")
-        actionManager.unregisterAction(INITIALISATION_ACTION_KEY)
+    override fun getConfigurationTypeDescription() : String {
+        return "Morganey Run Configuration Type"
     }
 
-    override fun initComponent() {
-        println("Plugin Loaded: ${this.componentName}")
-        actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("morg"))
+    override fun getId() : String {
+        return Constants.MORGANEY_RUN_CONFIGURATION
+    }
 
+    override fun getDisplayName() : String {
+        return "Morganey"
+    }
+
+    override fun getConfigurationFactories() : Array<out ConfigurationFactory> {
+        return arrayOf(MorganeyRunConfigurationFactory(this))
     }
 }
