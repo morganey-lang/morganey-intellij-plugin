@@ -59,7 +59,6 @@ class MorganeyFileType : FileType {
     }
 
     override fun getDescription() : String {
-        return "Contains all information required to compile a neural network" +
-                "using the Neuroph framework"
+        return "Morganey Source Code File"
     }
 }
