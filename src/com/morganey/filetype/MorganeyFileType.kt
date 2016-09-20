@@ -51,7 +51,7 @@ class MorganeyFileType : FileType {
     }
 
     override fun getDefaultExtension() : String {
-        return "morg"
+        return "mgn"
     }
 
     override fun getCharset(p0 : VirtualFile, p1 : ByteArray) : String? {

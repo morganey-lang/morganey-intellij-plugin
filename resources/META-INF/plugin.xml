@@ -25,7 +25,7 @@
 
 
   <extensions defaultExtensionNs="com.intellij">
-      <fileType.fileViewProviderFactory filetype="morg" implementationClass="com.morganey.editor.MorganeyFileViewProvider">
+      <fileType.fileViewProviderFactory filetype="mgn" implementationClass="com.morganey.editor.MorganeyFileViewProvider">
       </fileType.fileViewProviderFactory>
 
       <fileEditorProvider implementation="com.morganey.editor.MorganeyFileEditorProvider">

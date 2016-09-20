@@ -36,6 +36,6 @@ class MorganeyFileTypes : FileTypes {
     }
 
     companion object FileTypes {
-        @JvmStatic val MORGANEY_SOURCE : FileType = FileTypeManager.getInstance().getFileTypeByExtension("morg")
+        @JvmStatic val MORGANEY_SOURCE : FileType = FileTypeManager.getInstance().getFileTypeByExtension("mgn")
     }
 }

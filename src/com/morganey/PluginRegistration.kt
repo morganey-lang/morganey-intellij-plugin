@@ -51,7 +51,7 @@ class PluginRegistration : ApplicationComponent{
     override fun initComponent() {
         println("Plugin Loaded: ${this.componentName}")
         actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("morg"))
+        fileManager.registerFileType(MorganeyFileType(), *arrayOf("mgn"))
 
     }
 }
