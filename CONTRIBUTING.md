@@ -1,4 +1,4 @@
-# How To Conttribute To The Morganey IntelliJ Plugin
+# How To Contribute To The Morganey IntelliJ Plugin
 
 ## Dependencies 
 
