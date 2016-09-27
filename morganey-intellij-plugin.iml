@@ -15,14 +15,10 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/lib" />
+          <root url="jar://$MODULE_DIR$/lib/morganey-assembly-0.0.1-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES>
-          <root url="file://$MODULE_DIR$/lib" />
-        </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/lib" recursive="false" type="SOURCES" />
+        <SOURCES />
       </library>
     </orderEntry>
   </component>
