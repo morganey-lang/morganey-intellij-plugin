@@ -44,6 +44,10 @@
             </action>
     </group>
 
+      <action id="ViewRawTermAction" class="com.morganey.actions.ViewRawTermAction" text="View Raw Term"
+              description="View Morganey Term In Raw Form">
+          <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt R"/>
+      </action>
   </actions>
 
   <application-components>

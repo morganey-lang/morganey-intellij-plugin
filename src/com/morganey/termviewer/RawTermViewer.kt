@@ -22,38 +22,19 @@
     SOFTWARE.
 */
 
-package com.morganey
+package com.morganey.termviewer
 
-import com.intellij.ide.IdeEventQueue
-import com.intellij.openapi.actionSystem.ActionManager
-import com.intellij.openapi.components.ApplicationComponent
-import com.intellij.openapi.fileTypes.impl.FileTypeManagerImpl
-import com.morganey.actions.InitialisationAction
-import com.morganey.Constants.INITIALISATION_ACTION_KEY
-import com.morganey.filetype.MorganeyFileType
+import com.intellij.openapi.ui.popup.JBPopupFactory
 
 /**
- * Created by thoma on 19/09/2016.
+ * Created by thoma on 30/09/2016.
  */
-class PluginRegistration : ApplicationComponent{
-    val actionManager = ActionManager.getInstance()
-    val init = InitialisationAction()
-    val fileManager = FileTypeManagerImpl.getInstance()
-    val eventQueue = IdeEventQueue.getInstance()
+class RawTermViewer {
+    val popupFactory : JBPopupFactory = JBPopupFactory.getInstance()
 
-    override fun getComponentName() : String {
-        return "Morganey-For-Intellij"
-    }
-
-    override fun disposeComponent() {
-        println("Plugin Unloaded: ${this.componentName}")
-        actionManager.unregisterAction(INITIALISATION_ACTION_KEY)
-    }
-
-    override fun initComponent() {
-        println("Plugin Loaded: ${this.componentName}")
-        actionManager.registerAction(INITIALISATION_ACTION_KEY,InitialisationAction())
-        fileManager.registerFileType(MorganeyFileType(), *arrayOf("mgn"))
+    constructor(){
 
     }
+
+
 }
