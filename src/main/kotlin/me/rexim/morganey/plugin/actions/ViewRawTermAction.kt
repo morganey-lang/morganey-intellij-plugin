@@ -8,8 +8,8 @@ import com.intellij.openapi.actionSystem.DataConstants
 import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.util.TextRange
-import me.rexim.morganey.plugin.ParseTermScala
 import me.rexim.morganey.ast.LambdaTerm
+import me.rexim.morganey.plugin.termviewer.ParseTerm
 import scala.Option
 
 
@@ -26,7 +26,7 @@ class ViewRawTermAction : AnAction() {
         val endOffset = document?.getLineEndOffset(line!!)
         val text = document?.getText(TextRange(startOffset!!, endOffset!!))
         val raw : String
-        val parseResult: Option<LambdaTerm> = ParseTermScala.parse(text) as Option<LambdaTerm>
+        val parseResult: Option<LambdaTerm> = ParseTerm.parse(text!!) as Option<LambdaTerm>
 
         if (parseResult.isDefined) {
             raw = parseResult.get().toString()

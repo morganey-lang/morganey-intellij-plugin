@@ -22,7 +22,7 @@
     SOFTWARE.
 */
 
-package me.rexim.morganey.plugin
+package me.rexim.morganey.plugin.scala
 
 import me.rexim.morganey.ast.LambdaTerm
 import me.rexim.morganey.syntax.LambdaParser
