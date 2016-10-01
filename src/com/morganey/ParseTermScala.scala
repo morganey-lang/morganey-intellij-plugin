@@ -24,7 +24,7 @@
 
 package com.morganey
 
-import me.rexim.morganey.ast.{LambdaInput, LambdaTerm}
+import me.rexim.morganey.ast.LambdaTerm
 import me.rexim.morganey.syntax.LambdaParser
 
 /**
@@ -33,8 +33,15 @@ import me.rexim.morganey.syntax.LambdaParser
 object ParseTermScala {
   def lambdaParser = LambdaParser
 
-  def parse(term: String): LambdaParser.ParseResult[LambdaTerm] ={
-    lambdaParser.parse(LambdaParser.term, term)
+  def parse(term: String): LambdaParser.ParseResult[LambdaTerm] = {
+    if(term != null) {
+      def successful = lambdaParser.parse(LambdaParser.term, term).successful
+      if (successful) {
+        return lambdaParser.parse(LambdaParser.term, term)
+      }
+    }
+    return null
+
   }
 
 }
