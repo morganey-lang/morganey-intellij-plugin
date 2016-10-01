@@ -53,3 +53,24 @@ fabric.properties
 # modules.xml
 # .idea/misc.xml 
 # *.ipr
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/dictionaries
+.DS_Store
+/build
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/dictionaries
+.DS_Store
+/build
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/dictionaries
+.DS_Store
+/build

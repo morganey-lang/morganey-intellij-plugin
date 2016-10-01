@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/morganey-intellij-plugin.iml" filepath="$PROJECT_DIR$/morganey-intellij-plugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_main.iml" group="morganey-intellij-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_test.iml" group="morganey-intellij-plugin" />
     </modules>
   </component>
 </project>
