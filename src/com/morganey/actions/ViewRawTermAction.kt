@@ -9,6 +9,8 @@ import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.util.TextRange
 import com.morganey.ParseTermScala
+import me.rexim.morganey.ast.LambdaTerm
+import scala.Option
 
 
 /**
@@ -24,10 +26,12 @@ class ViewRawTermAction : AnAction() {
         val endOffset = document?.getLineEndOffset(line!!)
         val text = document?.getText(TextRange(startOffset!!, endOffset!!))
         val raw : String
-        if(ParseTermScala.parse(text) != null) {
-            raw = ParseTermScala.parse(text).get().toString()
+        val parseResult: Option<LambdaTerm> = ParseTermScala.parse(text)
+
+        if (parseResult.isDefined) {
+            raw = parseResult.get().toString()
         }
-        else{
+        else {
             raw = "Invalid Term: " + text
         }
         val hintManager = HintManager.getInstance()
