@@ -75,3 +75,4 @@ fabric.properties
 .DS_Store
 /build
 /scala/build
+/.idea/*
