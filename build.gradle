@@ -21,7 +21,7 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 intellij {
-    version 'LATEST-EAP-SNAPSHOT'
+    version 'IC-2016.2'
     pluginName 'Morganey For Intellij'
 }
 
