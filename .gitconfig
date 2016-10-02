@@ -1,0 +1,1 @@
+addscr = !sh -c 'if [[ ${0: $} == "gradlew" ]]; then git update-index --chmod=+x $0; git add $0'
