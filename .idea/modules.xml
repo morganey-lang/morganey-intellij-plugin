@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_main.iml" group="morganey-intellij-plugin" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/morganey-intellij-plugin_test.iml" group="morganey-intellij-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala/scala.iml" filepath="$PROJECT_DIR$/.idea/modules/scala/scala.iml" group="scala" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scala/scala_main.iml" filepath="$PROJECT_DIR$/.idea/modules/scala/scala_main.iml" group="scala" />
     </modules>
   </component>
 </project>

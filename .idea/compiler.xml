@@ -21,6 +21,8 @@
     <bytecodeTargetLevel>
       <module name="morganey-intellij-plugin_main" target="1.8" />
       <module name="morganey-intellij-plugin_test" target="1.8" />
+      <module name="scala_main" target="1.8" />
+      <module name="scala_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,118 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> D:\GitHub\morganey-intellij-plugin\scala\build\classes\main
+compile options:
+2 items
+0 -> -deprecation
+1 -> -unchecked
+javac options:
+4 items
+0 -> -d
+1 -> D:\GitHub\morganey-intellij-plugin\scala\build\classes\main
+2 -> -g
+3 -> -XDuseUnsharedTable=true
+compiler version:
+1 items
+0 -> 2.11.1
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+4 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm$$anonfun$parse$1$$anonfun$apply$1.class
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm$$anonfun$parse$1.class
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm$.class
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm.class
+binary dependencies:
+3 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> C:\Users\thoma\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> D:\GitHub\morganey-intellij-plugin\scala\build\lib\morganey.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+4 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> me.rexim.morganey.plugin.scala.ParseTerm
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> me.rexim.morganey.plugin.scala.ParseTerm$
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> me.rexim.morganey.plugin.scala.ParseTerm$$anonfun$parse$1
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> me.rexim.morganey.plugin.scala.ParseTerm$$anonfun$parse$1$$anonfun$apply$1
+used names:
+25 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> <init>
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> AnyRef
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> InputSource
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> LambdaParser
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> LambdaTerm
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> Option
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> ParseTerm
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> Predef
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> String
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> apply
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> ast
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> flatMap
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> fromString
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> lambdaParser
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> me
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> morganey
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> package
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> parseWith
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> plugin
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> rexim
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> scala
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> syntax
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> term
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> toOption
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> util
+product stamps:
+4 items
+D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm$$anonfun$parse$1$$anonfun$apply$1.class -> lastModified(1475408871698)
+D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm$$anonfun$parse$1.class -> lastModified(1475408871690)
+D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm$.class -> lastModified(1475408871676)
+D:\GitHub\morganey-intellij-plugin\scala\build\classes\main\me\rexim\morganey\plugin\scala\ParseTerm.class -> lastModified(1475408871618)
+source stamps:
+1 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> hash(fe4854cd6aef5faaec1076bf02eb129bf53f2f56)
+binary stamps:
+3 items
+C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar -> lastModified(1469309597270)
+C:\Users\thoma\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar -> lastModified(1475345434057)
+D:\GitHub\morganey-intellij-plugin\scala\build\lib\morganey.jar -> lastModified(1475408862357)
+class names:
+3 items
+C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar -> java.lang.Object
+C:\Users\thoma\.gradle\caches\modules-2\files-2.1\org.scala-lang\scala-library\2.11.1\e11da23da3eabab9f4777b9220e60d44c1aab6a\scala-library-2.11.1.jar -> scala.Option$
+D:\GitHub\morganey-intellij-plugin\scala\build\lib\morganey.jar -> me.rexim.morganey.ast.LambdaTerm
+internal apis:
+1 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAGvjjnAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAFnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cCdvQhd0AAZub3RpZnlzcQB+AAzbHfXldAAEd2FpdHNxAH4ADGGwrid0AA0kYXNJbnN0YW5jZU9mc3EAfgAMHXl+sHQABmVxdWFsc3NxAH4ADJarSgF0AAxhc0luc3RhbmNlT2ZzcQB+AAzJO7addAAMc3luY2hyb25pemVkc3EAfgAMdPrua3QADSRpc0luc3RhbmNlT2ZzcQB+AAwfbxC8dAAJbm90aWZ5QWxsc3EAfgAMrF/7inQADGlzSW5zdGFuY2VPZnNxAH4ADI8zQGJ0AAlQYXJzZVRlcm1zcQB+AAwKK9vfdAAFcGFyc2VzcQB+AAyCwAKWdAACPT1zcQB+AAw1nxLgdAAFY2xvbmVzcQB+AAzSDFU7dAAIdG9TdHJpbmdzcQB+AAyswmyAdAACIT1zcQB+AAxrXVH+dAAMbGFtYmRhUGFyc2Vyc3EAfgAMhmZBhHQACGdldENsYXNzc3EAfgAM0ChmJHQAAm5lc3EAfgAM1WhM/3QAAmVxc3EAfgAMZfnmyXQAAiMjc3EAfgAMY5GWYHQACGZpbmFsaXplc3EAfgAMXXAJ13QACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AQ3hyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHQAKG1lLnJleGltLm1vcmdhbmV5LnBsdWdpbi5zY2FsYS5QYXJzZVRlcm11cgAaW0x4c2J0aS5hcGkuVHlwZVBhcmFtZXRlcjvZbSYPKJ3ytgIAAHhwAAAAAH5yABh4c2J0aS5hcGkuRGVmaW5pdGlvblR5cGUAAAAAAAAAABIAAHhyAA5qYXZhLmxhbmcuRW51bQAAAAAAAAAAEgAAeHB0AAZNb2R1bGV1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgBceHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgBbAHBzcQB+AGBzcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AQ0wACWluaGVyaXRlZHEAfgBDTAAHcGFyZW50c3EAfgBDeHEAfgBkc3EAfgBbAHBzcQB+AGB1cQB+AD4AAAAAc3EAfgBbAHBzcQB+AGB1cQB+AD4AAAAAc3EAfgBbAHBzcQB+AGB1cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAAAnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AGN0AAZPYmplY3RzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AGNzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAANzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABGphdmFzcQB+AIB0AARsYW5nc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AIFzcQB+AHR0AANBbnlzcQB+AHhzcQB+AHt1cQB+AH4AAAACc3EAfgCAdAAFc2NhbGFxAH4Ah3VyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAFc3IAEXhzYnRpLmFwaS5QYWNrYWdlflmP9q7OOVgCAAFMAARuYW1lcQB+AA14cHQACG1lLnJleGltc3EAfgCRdAAYbWUucmV4aW0ubW9yZ2FuZXkucGx1Z2luc3EAfgCRdAACbWVzcQB+AJF0ABFtZS5yZXhpbS5tb3JnYW5leXNxAH4AkXQAHm1lLnJleGltLm1vcmdhbmV5LnBsdWdpbi5zY2FsYXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABV4U4q2B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdAA7RDpcR2l0SHViXG1vcmdhbmV5LWludGVsbGlqLXBsdWdpblxzY2FsYVxidWlsZFxjbGFzc2VzXG1haW50AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABT+SFTNau9fquwQdr8C6xKb9T8vVg==
+external apis:
+0 items
+source infos:
+1 items
+D:\GitHub\morganey-intellij-plugin\scala\src\main\scala\me\rexim\morganey\plugin\scala\ParseTerm.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABV4U4q2B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAO0Q6XEdpdEh1Ylxtb3JnYW5leS1pbnRlbGxpai1wbHVnaW5cc2NhbGFcYnVpbGRcY2xhc3Nlc1xtYWludAABLw==

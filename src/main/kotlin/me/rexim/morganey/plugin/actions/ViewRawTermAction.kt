@@ -9,7 +9,7 @@ import com.intellij.openapi.editor.Editor
 import com.intellij.openapi.util.Disposer
 import com.intellij.openapi.util.TextRange
 import me.rexim.morganey.ast.LambdaTerm
-import me.rexim.morganey.plugin.termviewer.ParseTerm
+import me.rexim.morganey.plugin.scala.ParseTerm
 import scala.Option
 
 
