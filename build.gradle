@@ -1,0 +1,63 @@
+buildscript {
+    ext.kotlin_version = '1.0.4'
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+plugins {
+    id "org.jetbrains.intellij" version "0.1.10"
+}
+
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'kotlin'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+intellij {
+    version 'LATEST-EAP-SNAPSHOT'
+    pluginName 'Morganey For Intellij'
+}
+
+group 'me.rexim.morganey.plugin'
+version '0.1'
+
+sourceSets{
+    main{
+        scala {
+            srcDirs = ['src/main/scala', 'src/main/java', 'src/main/kotlin']
+        }
+
+    }
+}
+
+def urlFile = { url, name ->
+    File file = new File("$buildDir/lib/${name}.jar")
+    file.parentFile.mkdirs()
+    if (!file.exists()) {
+        new URL(url).withInputStream { downloadStream ->
+            file.withOutputStream { fileOut ->
+                fileOut << downloadStream
+            }
+        }
+    }
+    files(file.absolutePath)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile project(':scala')
+    compile urlFile('https://github.com/morganey-lang/morganey-intellij-plugin/raw/new-build/jars/morganey-01.10.2016.1900.jar', 'morganey')
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.scala-lang:scala-compiler:2.11.1"
+    compile 'org.scala-lang:scala-library:2.11.1'
+}

@@ -1,0 +1,3 @@
+rootProject.name = 'morganey-intellij-plugin'
+include 'scala'
+
