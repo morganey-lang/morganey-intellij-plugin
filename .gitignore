@@ -74,3 +74,4 @@ fabric.properties
 /.idea/dictionaries
 .DS_Store
 /build
+/scala/build
