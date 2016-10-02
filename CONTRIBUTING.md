@@ -2,18 +2,14 @@
 
 ## Dependencies 
 
-1. IntelliJ 2016.X.X Community Stable With Kotlin and Scala Plugin
-2. IntelliJ 2016.X.X Ultimate EAP With Kotlin and Scala Plugin 
-	* Download From [here](https://confluence.jetbrains.com/display/IDEADEV/EAP)
-3. Local Clone Of This Repo
-4. Gradle 3.1+
-	* Download From [here](https://gradle.org/gradle-download/)
+1. Local Clone Of This Repository
 
 ## Build Instructions From Within IDEA
 
-1. Install All Dependencies
-2. Open This Project In IntelliJ Community
-3. Click The Run (Play) Button To Launch The Plugin In A Child IntelliJ Instance
+1. IntelliJ 2016.X.X Community Stable With Kotlin and Scala Plugin
+2. Install All Dependencies
+3. Open This Project In IntelliJ 
+4. Click The Run (Play) Button To Launch The Plugin In A Child IntelliJ Instance
 
 ## Build Instructions From Command Line
 
