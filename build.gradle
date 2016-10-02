@@ -56,7 +56,7 @@ repositories {
 
 dependencies {
     compile project(':scala')
-    compile urlFile('https://github.com/morganey-lang/morganey-intellij-plugin/raw/master/jars/morganey-01.10.2016.1900.jar', 'morganey')
+    compile urlFile('https://github.com/morganey-lang/Morganey/releases/download/0.0.1/morganey.jar', 'morganey')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.scala-lang:scala-compiler:2.11.1"
     compile 'org.scala-lang:scala-library:2.11.1'
