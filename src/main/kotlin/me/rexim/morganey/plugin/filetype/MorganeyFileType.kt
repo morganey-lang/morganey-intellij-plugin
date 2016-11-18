@@ -34,8 +34,13 @@ import javax.swing.Icon
  */
 class MorganeyFileType : FileType {
 
+    companion object StaticData{
+        @JvmStatic val INSTANCE = MorganeyFileType()
+        @JvmStatic val DEFAULT_EXTENSION = "mgn"
+    }
+
     override fun getIcon() : Icon? {
-        return null
+        return null // Todo Add Morganey Icon
     }
 
     override fun getName() : String {
@@ -51,7 +56,7 @@ class MorganeyFileType : FileType {
     }
 
     override fun getDefaultExtension() : String {
-        return "mgn"
+        return DEFAULT_EXTENSION
     }
 
     override fun getCharset(p0 : VirtualFile, p1 : ByteArray) : String? {
