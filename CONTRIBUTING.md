@@ -16,3 +16,12 @@
 1. Install All Dependencies
 2. cd to the root of the repository
 3. run ./gradlew build 
+
+## To Generate The JFlex Files
+
+1. Intall the GrammarKit Plugin into IntelliJ
+2. Right click on the `morganey.bnf` file in the resources directory
+3. Click the following options in this order `Generate JFlex Lexer`, `Generate Parser Code` and `Generate Parser Util`
+4. See Screenshot Below
+
+![Imgur](http://i.imgur.com/zwdxuHj.png)

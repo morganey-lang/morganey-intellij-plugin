@@ -32,6 +32,8 @@
         </fileEditorProvider>
         <configurationType implementation="me.rexim.morganey.plugin.run.MorganeyRunConfigurationType">
         </configurationType>
+        <fileTypeFactory implementation="me.rexim.morganey.plugin.filetype.MorganeyFileTypeFactory">
+        </fileTypeFactory>
 
     </extensions>
 

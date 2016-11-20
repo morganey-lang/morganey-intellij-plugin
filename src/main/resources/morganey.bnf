@@ -1,0 +1,32 @@
+<term> ::= <function>{
+  parserUtilClass="me.rexim.morganey.plugin.parser.generated.MorganeyParserUtil"
+}
+         | <application>
+         | <literal>
+         | <variable>
+         | "(" <term> "," <term> ")"
+         | "(" <term> ")"
+<binding> ::= <variable> ":=" <term>
+<module-path> ::= "[a-zA-Z][a-zA-Z0-9.]*"
+<loading> ::= "load" <module-path>
+
+
+<literal> ::= <numeric-literal>
+            | <character-literal>
+            | <string-literal>
+            | <list-literal>
+<numeric-literal> ::= "[0-9]+"
+<character-literal> ::= '[\u0020-\u00B0]'
+                      | '\\[\\'"bfnrt"']'
+<string-literal> ::= <java-string-literal>
+private <java-string-literal> ::= '[\""]'
+<list-literal> ::= "[" [ term { "," term } ] "]"
+                 | "[" <term> [ "," <term> ] ".." <term> "]"
+<number-or-character> ::= <numeric-literal>
+                        | <character-literal>
+
+<variable> ::= "[a-zA-Z][a-zA-Z0-9]*"
+<function> ::= <lambda-symbol> <variable> "." { <variable> "." } <term>
+<application> ::= <term> <term> { <term> }
+<lambda-symbol> ::= "λ"
+                  | "\\"
